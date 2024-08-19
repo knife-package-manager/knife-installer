@@ -7,6 +7,5 @@ cd ~/.knife/build
 chmod +x ./test
 ./test &&
   make install
-mv ~/.knife/build/target/release/knife ~/.knife/bin/
 echo "export PATH=$PATH:~/.knife/bin" >> ~/.bashrc
 find ~/.knife/build -mindepth 1 -delete

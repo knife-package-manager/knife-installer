@@ -1,6 +1,42 @@
-printf "installing installer...\n"
-wget https://github.com/17do/knife-installer.github.io/releases/download/0.1/install.sh &&
-chmod +x install.sh &&
-./install.sh
-rm install.sh
+echo "Knife Installer"
+echo "This installer builds Knife and generates an executable file tailored to your computer."
+echo "Estimated build time is about 4 minutes."
+echo "Enter y or yes to run, or n or no to cancel"
+printf "[y/n] "
+read -r val
 
+case "$val" in
+y | yes)
+  echo "Start installation"
+
+  mkdir -p ~/.knife/ &&
+    git clone https://github.com/17do/knife-package-list ~/.knife/packagelist/ &&
+    mkdir -p ~/.knife/bin/ &&
+    mkdir -p ~/.knife/build &&
+    git clone https://github.com/17do/knife-package-manager ~/.knife/build &&
+    cd ~/.knife/build &&
+    chmod +x ./test &&
+    ./test &&
+    make install
+
+  if [ -f ~/.bashrc ] && [ -r ~/.bashrc ]; then
+    echo "export PATH=\$PATH:~/.knife/bin" >>~/.bashrc
+  fi
+  if [ -f ~/.zshrc ] && [ -r ~/.zshrc ]; then
+    echo "export PATH=\$PATH:~/.knife/bin" >>~/.zshrc
+  fi
+  if [ -f ~/.config/fish/config.fish ] && [ -r ~/.config/fish/config.fish ]; then
+    echo "fish_add_path ~/.knife/bin" >>~/.config/fish/config.fish
+  fi
+
+  if [ -d ~/.knife/build ]; then
+    find ~/.knife/build -mindepth 1 -delete
+  fi
+  ;;
+n | no)
+  echo "Installation has been canceled."
+  ;;
+*)
+  echo "Invalid input. Please enter y or yes to run, or n or no to cancel."
+  ;;
+esac

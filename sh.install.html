@@ -3,10 +3,10 @@ echo "This installer builds Knife and generates an executable file tailored to y
 echo "Estimated build time is about 4 minutes."
 echo "Enter y or yes to run, or n or no to cancel"
 printf "[y/n] "
-read -r val
+read val
 
 case "$val" in
-y | yes)
+y|yes)
   echo "Start installation"
 
   mkdir -p ~/.knife/ &&
@@ -20,20 +20,20 @@ y | yes)
     make install
 
   if [ -f ~/.bashrc ] && [ -r ~/.bashrc ]; then
-    echo "export PATH=\$PATH:~/.knife/bin" >>~/.bashrc
+    echo 'export PATH=$PATH:~/.knife/bin' >> ~/.bashrc
   fi
   if [ -f ~/.zshrc ] && [ -r ~/.zshrc ]; then
-    echo "export PATH=\$PATH:~/.knife/bin" >>~/.zshrc
+    echo 'export PATH=$PATH:~/.knife/bin' >> ~/.zshrc
   fi
   if [ -f ~/.config/fish/config.fish ] && [ -r ~/.config/fish/config.fish ]; then
-    echo "fish_add_path ~/.knife/bin" >>~/.config/fish/config.fish
+    echo 'fish_add_path ~/.knife/bin' >> ~/.config/fish/config.fish
   fi
 
   if [ -d ~/.knife/build ]; then
     find ~/.knife/build -mindepth 1 -delete
   fi
   ;;
-n | no)
+n|no)
   echo "Installation has been canceled."
   ;;
 *)

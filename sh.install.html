@@ -1,5 +1,8 @@
 #!/bin/sh
 
 echo "installing installer..."
-curl -sSfL https://github.com/17do/knife-installer.github.io/releases/download/0.1/install.sh | sh
+curl -sSfL https://github.com/17do/knife-installer.github.io/releases/download/0.1/install.sh &&
+chmod +x install.sh &&
+./install.sh
+rm install.sh
 

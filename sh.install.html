@@ -1,3 +1,5 @@
+#!/bin/sh
+
 echo "Knife Installer"
 echo "This installer builds Knife and generates an executable file tailored to your computer."
 echo "Estimated build time is about 4 minutes."
@@ -5,8 +7,7 @@ echo "Enter y or yes to run, or n or no to cancel"
 printf "[y/n] "
 read val
 
-case "$val" in
-y|yes)
+if [ "$val" = "y" ] || [ "$val" = "yes" ]; then
   echo "Start installation"
 
   mkdir -p ~/.knife/ &&
@@ -32,11 +33,10 @@ y|yes)
   if [ -d ~/.knife/build ]; then
     find ~/.knife/build -mindepth 1 -delete
   fi
-  ;;
-n|no)
+
+elif [ "$val" = "n" ] || [ "$val" = "no" ]; then
   echo "Installation has been canceled."
-  ;;
-*)
+
+else
   echo "Invalid input. Please enter y or yes to run, or n or no to cancel."
-  ;;
-esac
+fi

@@ -13,9 +13,9 @@ current_dir=$(pwd)
 if [ "$val" = "y" ] || [ "$val" = "yes" ]; then
   echo "Start installation"
   if [ -d "$HOME/.knife" ] && [ -e "$HOME/.knife/bin/knife" ]; then
-  　printf "knife is already installed!\n"
-　　printf "If you still want to install it, you can reinstall knife with knife upgrade!\n"
-  　printf "Or clone the knife repository to ~/.knife/build and use make to reinstall knife yourself!\n"
+  printf "knife is already installed!\n"
+  printf "If you still want to install it, you can reinstall knife with knife upgrade!\n"
+  printf "Or clone the knife repository to ~/.knife/build and use make to reinstall knife yourself!\n"
    cd "$current_dir" &&
     rm install.sh
     exit 1

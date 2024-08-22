@@ -91,6 +91,9 @@ if [ "$val" = "y" ] || [ "$val" = "yes" ] || [ "$val" = "" ]; then
 
 elif [ "$val" = "n" ] || [ "$val" = "no" ]; then
   echo "Installation has been canceled."
+  cd "$current_dir" &&
+    rm install.sh
+  
 
 elif [ "$val" = "d" ] || [ "$val" = "dev" ]; then
   echo "Start installation"
@@ -176,6 +179,8 @@ elif [ "$val" = "d" ] || [ "$val" = "dev" ]; then
 
 else
   echo "Invalid input. Please enter y or yes to run, or n or no to cancel."
+  cd "$current_dir" &&
+    rm install.sh
 fi
 
 if [ "$ok" = true ]; then

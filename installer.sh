@@ -24,7 +24,7 @@ if [ "$val" = "y" ] || [ "$val" = "yes" ]; then
   mkdir -p "$HOME/knife_build" &&
     printf "ok\n"
   printf "downloading the test.rs..."
-  curl -sSfL https://github.com/17do/knife-installer.github.io/releases/download/0.1/test.rs -o "$HOME/knife_build/test.rs" &&
+  curl -sSfL https://github.com/knife-package-manager/knife-installer.github.io/releases/download/0.1/check_knife_install_dependency.rs -o "$HOME/knife_build/test.rs" &&
     printf "ok\n"
   printf "checking rustc..."
   if which rustc >"$HOME/knife_build/info.log"; then

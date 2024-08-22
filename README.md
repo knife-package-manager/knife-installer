@@ -1,1 +1,1 @@
-# knife-installer.github.io
+# knife-installer

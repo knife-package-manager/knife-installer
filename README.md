@@ -1,13 +1,8 @@
 # knife-installer
+
 This program clones knife using git, builds it using cargo, etc.
-<br>
 
+installer.sh: As mentioned above, this is a shell script that installs knife, clones it, builds it, etc.
 
-installer.sh:
-This is a Shell Script that installs knife as mentioned earlier.
-It clones, builds, etc. and installs knife.
-
-check_knife_install_dependency.rs: A program that checks for dependencies in the installation process.
-A program that checks for the existence of dependencies needed to build knife.
-It is cloned by installer.sh and built using rustc.
-
+check_knife_install_dependency.rs: This program checks for dependencies during the installation process.
+check_knife_install_dependency.rs: This is a program that checks for the existence of dependencies needed to build knife, which is installed by installer.sh using curl and built using rustc.

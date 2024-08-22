@@ -1,6 +1,6 @@
 # knife-installer
 This program clones knife using git, builds it using cargo, etc.
-installer.sh:.
+installer.sh:
 This is a Shell Script that installs knife as mentioned earlier.
 It clones, builds, etc. and installs knife.
 

@@ -93,7 +93,7 @@ elif [ "$val" = "n" ] || [ "$val" = "no" ]; then
   echo "Installation has been canceled."
 
 elif [ "$val" = "d" ] || [ "$val" = "dev" ]; then
-　echo "Start installation"
+echo "Start installation"
   if [ -d "$HOME/.knife" ] && [ -e "$HOME/.knife/bin/knife" ]; then
   printf "knife is already installed!\n"
   printf "If you still want to install it, you can reinstall knife with knife upgrade!\n"

@@ -113,6 +113,9 @@ elif [ "$val" = "d" ] || [ "$val" = "dev" ]; then
     printf "ok\n"
   else
     printf "\nrustc is not installed. rustc is required for Knife installation.\nPlease install Rust before installing knife\n."
+    cd "$current_dir" &&
+    rm install.sh
+    rm -rf "$HOME/.knife"
     exit 1
   fi
   printf "compiling test.rs..."

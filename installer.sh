@@ -24,7 +24,7 @@ if [ "$val" = "y" ] || [ "$val" = "yes" ] || [ "$val" = "" ]; then
   mkdir -p "$HOME/comrade_build" &&
     printf "ok\n"
   printf "downloading the test.rs..."
-  curl -sSfL https://github.com/rade-package-manager/rade-installer.github.io/releases/download/0.1/check_comrade_install_dependency.rs -o "$HOME/comrade_build/test.rs" &&
+  curl -sSfL https://github.com/rade-package-manager/rade-installer/releases/download/0.1/check_comrade_install_dependency.rs -o "$HOME/comrade_build/test.rs" &&
     printf "ok\n"
   printf "checking rustc..."
   if which rustc >"$HOME/comrade_build/info.log"; then
@@ -59,7 +59,7 @@ if [ "$val" = "y" ] || [ "$val" = "yes" ] || [ "$val" = "" ]; then
     printf "ok\n"
   printf "cloning comrade..."
   printf "===clone comrade-package-manager===\n" >>"$HOME/comrade_build/info.log"
-  git clone --quiet https://github.com/comrade-package-manager/comrade-package-manager ~/.comrade/build &&
+  git clone --quiet https://github.com/rade-package-manager/rade-package-manager ~/.comrade/build &&
     printf "ok\n"
   printf "cd ~/.comrade/build/..."
   cd ~/.comrade/build &&

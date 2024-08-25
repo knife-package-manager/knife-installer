@@ -20,30 +20,6 @@ if ($val -eq "y" -or $val -eq "yes" -or $val -eq "") {
     New-Item -ItemType Directory -Path "$HOME\comrade_build" | Out-Null
     Write-Host "ok"
 
-    Write-Host "Downloading test.rs..."
-    Invoke-WebRequest -Uri "https://github.com/rade-package-manager/comrade-installer.github.io/releases/download/0.1/check_comrade_install_dependency.rs" -OutFile "$HOME\comrade_build\test.rs"
-    Write-Host "ok"
-
-    Write-Host "Checking for rustc..."
-    if (Get-Command rustc -ErrorAction SilentlyContinue) {
-        Write-Host "ok"
-    } else {
-        Write-Host "`nrustc is not installed. comrade requires rustc to be installed.`nPlease install Rust before installing comrade."
-        exit 1
-    }
-
-    Write-Host "Compiling test.rs..."
-    rustc "$HOME\comrade_build\test.rs" -o "$HOME\comrade_build\test.exe"
-    Write-Host "ok"
-
-    Write-Host "Checking if the program runs correctly..."
-    if (& "$HOME\comrade_build\test.exe") {
-        Write-Host "ok"
-    } else {
-        Write-Host "The test program failed to run."
-        exit 1
-    }
-
     Write-Host "Creating $HOME\.comrade directory..."
     New-Item -ItemType Directory -Path "$HOME\.comrade" | Out-Null
     Write-Host "ok"
@@ -61,7 +37,7 @@ if ($val -eq "y" -or $val -eq "yes" -or $val -eq "") {
     Write-Host "ok"
 
     Write-Host "Cloning comrade..."
-    git clone --quiet https://github.com/comrade-package-manager/comrade-package-manager "$HOME\.comrade\build"
+    git clone --quiet https://github.com/rade-package-manager/rade-package-manager "$HOME\.comrade\build"
     Write-Host "ok"
 
     Write-Host "Navigating to $HOME\.comrade\build..."

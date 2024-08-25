@@ -1,6 +1,6 @@
 # rade-installer
 
-This program clones Knife using Git, builds it using Cargo, and installs comrade.
+This program clones Comrade using Git, builds it using Cargo, and installs comrade.
 
 installer.sh: As mentioned above, this is a shell script that installs, clones, and builds comrade.
 

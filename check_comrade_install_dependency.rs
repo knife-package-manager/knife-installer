@@ -48,22 +48,22 @@ fn main() {
     if check_installd_git() {
         println!("git is installed.");
     } else {
-        eprintln!("git is required to install knife.");
-        eprintln!("Please install git before installing knife.");
+        eprintln!("git is required to install comrade.");
+        eprintln!("Please install git before installing comrade.");
         std::process::exit(1);
     }
     if check_installd_rust() {
         println!("cargo is installed.");
     } else {
-        eprintln!("Rust is required to install knife.");
-        eprintln!("Install rust and then knife.");
+        eprintln!("Rust is required to install comrade.");
+        eprintln!("Install rust and then comrade.");
         std::process::exit(1);
     }
     if check_installd_make() {
         println!("make is installed.");
     } else {
-        eprintln!("Make is required to install Knife.");
-        eprintln!("Please install make before installing knife.");
+        eprintln!("Make is required to install comrade.");
+        eprintln!("Please install make before installing comrade.");
         std::process::exit(1);
     }
 
@@ -75,8 +75,8 @@ fn main() {
             println!("{} development package is installed.", package);
         } else {
             eprintln!("{} development package is not installed.", package);
-            eprintln!("openssl-dev is required for knife");
-            eprintln!("Please install openssl-dev before installing knife");
+            eprintln!("openssl-dev is required for comrade");
+            eprintln!("Please install openssl-dev before installing comrade");
             std::process::exit(1);
         }
     } else {

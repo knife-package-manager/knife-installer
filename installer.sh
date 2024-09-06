@@ -50,7 +50,12 @@ if [ "$val" = "y" ] || [ "$val" = "yes" ] || [ "$val" = "" ]; then
   printf "===clone packagelist===\n" >>"$HOME/comrade_build/info.log"
   git clone --quiet https://github.com/rade-package-manager/rade-package-list ~/.comrade/packagelist/ &&
     printf "ok\n"
-    printf "clone is ok" >> "$HOME/comrade_build/info.log"
+    printf "clone is ok\n" >> "$HOME/comrade_build/info.log"
+printf "creating ~/.comrade/log..."
+mkdir -p ~/.comrade/log
+print "ok\n"
+printf "creating ~/.comrade/log/install..."
+mkdir -p ~/.comrade/log/install
   printf "creating ~/.comrade/bin/..."
   mkdir -p ~/.comrade/bin &&
     printf "ok\n"

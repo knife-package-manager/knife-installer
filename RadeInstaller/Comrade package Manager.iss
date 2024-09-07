@@ -75,7 +75,7 @@ Source: "xargs.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-2.0.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-apr-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-aprutil-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-asn-1-8.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-asn1-8.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-assuan-0.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-bz2-1.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-cbor-0.11.dll"; DestDir: "{app}"; Flags: ignoreversion
@@ -88,7 +88,7 @@ Source: "msys-expat-1.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-ffi-8.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-fido2-1.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-gcc_s-seh-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-crypt-20.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-gcrypt-20.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-gmp-10.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-gnutls-30.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-gpg-error-0.dll"; DestDir: "{app}"; Flags: ignoreversion
@@ -97,59 +97,53 @@ Source: "msys-hcrypto-4.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-heimbase-1.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-heimntlm-0.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-hogweed-6.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-hx509-5.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-iconv-2.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-idn2-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-intl-8.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-krb5-26.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-ksba-8.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-lz4-1.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-lzma-5.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-mpfr-6.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-ncursesw6.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-nettle-8.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-npth-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-p11-kit-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-pcre-1.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-pcre2-8-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-pcre2-posix-3.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-perl5_38.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-readline8.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-roken-18.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-sasl2-3.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-serf-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-smartcols-1.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-sqlite3-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-ssl-3.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_client-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_delta-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_diff-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_fs-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_fs_fs-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_fs_util-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_fs_x-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_ra-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_ra_local-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_ra_serf-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_ra_svn-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_repos-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_subr-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_swig_perl-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-svn_wc-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-tasn1-6.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-ticw6.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-unistring-5.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-uuid-1.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-wind-0.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-z.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "msys-zstd-1.dll"; DestDir: "{app}"; Flags: ignoreversion
+
 
 [Code]
 var
@@ -165,7 +159,6 @@ function IsShInstalled: Boolean;
 var
   ResultCode: Integer;
 begin
-  // sh.exe がインストールされているか確認
   Result := Exec('cmd.exe', '/C where sh', '', SW_HIDE, ewWaitUntilTerminated, ResultCode) and (ResultCode = 0);
 end;
 
@@ -185,7 +178,6 @@ var
 begin
   if CurStep = ssInstall then
   begin
-    // shがインストールされていない場合、ユーザーにインストールするか確認
     if not IsShInstalled then
     begin
       MsgResult := MsgBox('sh is not installed. Would you like to install it?', mbConfirmation, MB_YESNO);
@@ -202,30 +194,25 @@ begin
       end;
     end;
 
-    // Gitのインストール確認
     if not Exec('cmd.exe', '/C where git', '', SW_HIDE, ewWaitUntilTerminated, ResultCode) then
     begin
       MsgBox('Git is not installed. Please install Git.', mbError, MB_OK);
       Abort;  // Gitがない場合はインストールを中止
     end;
 
-    // 必要なディレクトリ作成
     ForceDirectories(ExpandConstant('{code:GetUserHomeDir}\.comrade\log'));
     ForceDirectories(ExpandConstant('{code:GetUserHomeDir}\.comrade\log\install'));
     ForceDirectories(ExpandConstant('{code:GetUserHomeDir}\.comrade\packagelist'));
 
-    // Gitリポジトリのクローン
     if Exec('powershell.exe', '-Command "git clone https://github.com/rade-package-manager/rade-package-list {code:GetUserHomeDir}\.comrade\packagelist"', '', SW_HIDE, ewWaitUntilTerminated, ResultCode) then
       MsgBox('Git clone succeeded', mbInformation, MB_OK)
     else
       MsgBox('Git clone failed', mbError, MB_OK);
   end;
 
-  // ssPostInstall ステップでアンインストールファイルを削除
   if CurStep = ssPostInstall then
   begin
     DeleteFile(ExpandConstant('{app}\unins000.exe'));
     DeleteFile(ExpandConstant('{app}\unins000.dat'));
   end;
 end;
-

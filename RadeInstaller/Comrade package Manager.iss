@@ -97,7 +97,6 @@ Source: "msys-hcrypto-4.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-heimbase-1.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-heimntlm-0.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "msys-hogweed-6.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-.dll"; DestDir: "{app}"; Flags: ignoreversion
 
 [Code]
 var

@@ -9,30 +9,23 @@ Compression=lzma
 SolidCompression=yes
 LicenseFile=MIT-License.txt
 
-
 [Files]
 Source: "rade.exe"; DestDir: "{app}"; Flags: ignoreversion
 
-
-
 [Code]
-var
-  ResultCode: Integer;
-  InstallSh: Boolean;
-
-function GetUserHomeDir(Value: string): string;
+function GetUserHomeDir: string;
 begin
-  Result := GetEnv('USERPROFILE');  // ユーザーホームディレクトリの取得
+  Result := GetEnvironmentVariable('USERPROFILE');  // ユーザーホームディレクトリの取得
 end;
-
 
 procedure CurStepChanged(CurStep: TSetupStep);
 var
   MsgResult: Integer;
-  Sum: Integer;
+  ResultCode: Integer;
 begin
-
-if not Exec('cmd.exe', '/C where git', '', SW_HIDE, ewWaitUntilTerminated, ResultCode) then
+  if CurStep = ssInstall then
+  begin
+    if not Exec('cmd.exe', '/C where git', '', SW_HIDE, ewWaitUntilTerminated, ResultCode) then
     begin
       MsgBox('Git is not installed. Please install Git.', mbError, MB_OK);
       Abort;  // Gitがない場合はインストールを中止

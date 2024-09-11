@@ -43,6 +43,13 @@ begin
 
   if CurStep = ssPostInstall then
   begin
+    // コマンドの実行
+    if not Exec('cmd.exe', '/C rade upgrade', '', SW_SHOWNORMAL, ewWaitUntilTerminated, ResultCode) then
+    begin
+      MsgBox('Failed to execute post-install command.', mbError, MB_OK);
+    end;
+
+    // 不要なファイルの削除
     DeleteFile(ExpandConstant('{app}\unins000.exe'));
     DeleteFile(ExpandConstant('{app}\unins000.dat'));
   end;

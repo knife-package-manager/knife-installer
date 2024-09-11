@@ -13,9 +13,9 @@ LicenseFile=MIT-License.txt
 Source: "rade.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 [Code]
-function GetUserHomeDir: string;
+function GetUserHomeDir(Value: string): string;
 begin
-  Result := GetEnvironmentVariable('USERPROFILE');  // ユーザーホームディレクトリの取得
+  Result := GetEnv('USERPROFILE');  // ユーザーホームディレクトリの取得
 end;
 
 procedure CurStepChanged(CurStep: TSetupStep);

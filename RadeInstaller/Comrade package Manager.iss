@@ -7,142 +7,12 @@ OutputDir=.
 OutputBaseFilename=ComradeInstaller
 Compression=lzma
 SolidCompression=yes
-LicenseFile=GPL3-License.txt
+LicenseFile=MIT-License.txt
 
 
 [Files]
 Source: "rade.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "sh.exe"; DestDir: "{app}"; Flags: ignoreversion; Check: ShouldInstallSh
-Source: "GPL3-License.txt"; DestDir: "{app}\..\LICENSE"; Flags: ignoreversion
-Source: "MIT-License.txt"; DestDir: "{app}\..\LICENSE"; Flags: ignoreversion
-Source: "LGPL-License.txt"; DestDir: "{app}\..\LICENSE"; Flags: ignoreversion
-Source: "rade.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "base32.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "base64.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "cat.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "basename.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bash.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "chgrp.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "chmod.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "chown.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "cp.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "cut.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "date.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "df.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "dirname.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "du.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "echo.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "env.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "expand.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "fmt.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "fold.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "grep.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "head.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "install.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "join.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "kill.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "ln.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "ls.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "mkdir.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "mkfifo.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "mknod.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "mv.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "nl.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "od.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "paste.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "pr.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "ps.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "rm.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "rmdir.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "sed.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "shred.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "sleep.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "sort.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "split.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "stat.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "sum.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "tail.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "tar.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "tee.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "touch.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "tr.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "tty.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "uniq.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "unlink.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "wc.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "who.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "xargs.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-2.0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-apr-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-aprutil-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-asn1-8.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-assuan-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-bz2-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-cbor-0.11.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-com_err-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-crypt-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-crypt-2.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-crypto-3.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-edit-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-expat-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-ffi-8.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-fido2-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-gcc_s-seh-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-gcrypt-20.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-gmp-10.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-gnutls-30.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-gpg-error-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-gssapi-3.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hcrypto-4.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-heimbase-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-heimntlm-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hogweed-6.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-hx509-5.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-iconv-2.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-idn2-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-intl-8.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-krb5-26.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-ksba-8.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-lz4-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-lzma-5.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-mpfr-6.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-ncursesw6.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-nettle-8.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-npth-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-p11-kit-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-pcre-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-pcre2-8-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-pcre2-posix-3.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-perl5_38.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-readline8.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-roken-18.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-sasl2-3.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-serf-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-smartcols-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-sqlite3-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-ssl-3.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_client-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_delta-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_diff-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_fs-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_fs_fs-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_fs_util-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_fs_x-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_ra-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_ra_local-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_ra_serf-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_ra_svn-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_repos-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_subr-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_swig_perl-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-svn_wc-1-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-tasn1-6.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-ticw6.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-unistring-5.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-uuid-1.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-wind-0.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-z.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "msys-zstd-1.dll"; DestDir: "{app}"; Flags: ignoreversion
+
 
 
 [Code]
@@ -155,46 +25,14 @@ begin
   Result := GetEnv('USERPROFILE');  // ユーザーホームディレクトリの取得
 end;
 
-function IsShInstalled: Boolean;
-var
-  ResultCode: Integer;
-begin
-  Result := Exec('cmd.exe', '/C where sh', '', SW_HIDE, ewWaitUntilTerminated, ResultCode) and (ResultCode = 0);
-end;
-
-function ZipLicenseInfo: Boolean;
-begin
-  MsgBox('7zip is Licensed LGPL ', mbInformation, MB_OK);
-end;
-function ShouldInstallSh: Boolean;
-begin
-  Result := InstallSh;  // InstallSh 変数の値に基づいてインストールを決定
-end;
 
 procedure CurStepChanged(CurStep: TSetupStep);
 var
   MsgResult: Integer;
   Sum: Integer;
 begin
-  if CurStep = ssInstall then
-  begin
-    if not IsShInstalled then
-    begin
-      MsgResult := MsgBox('sh is not installed. Would you like to install it?', mbConfirmation, MB_YESNO);
-      
-      if MsgResult = IDYES then
-      begin
-        InstallSh := True;
-        MsgBox('Installing sh.', mbInformation, MB_OK);
-      end
-      else
-      begin
-        InstallSh := False;
-        MsgBox('Skipping sh installation.', mbInformation, MB_OK);
-      end;
-    end;
 
-    if not Exec('cmd.exe', '/C where git', '', SW_HIDE, ewWaitUntilTerminated, ResultCode) then
+if not Exec('cmd.exe', '/C where git', '', SW_HIDE, ewWaitUntilTerminated, ResultCode) then
     begin
       MsgBox('Git is not installed. Please install Git.', mbError, MB_OK);
       Abort;  // Gitがない場合はインストールを中止
